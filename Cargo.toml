@@ -1,0 +1,18 @@
+[package]
+name = "fogorow_unlock"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+penumbra = { git = "https://github.com/shomykohai/penumbra", package = "penumbra" }
+env_logger = "0.11.8"
+async-trait = "0.1.89"
+tokio = {version="1.47.1", features = ["full"]}
+tokio-serial = "5.4.5"
+futures = "0.3.31"
+log = "0.4.28"
+
+
+[[bin]]
+name = "fogorow_unlock_tool"
+path = "src/main.rs"
